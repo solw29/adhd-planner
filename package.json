@@ -1,0 +1,16 @@
+{
+  "name": "adhd-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ADHD/강박증/귀차니즘 Let's Go - Brain Dump 기반 AI 일정 관리",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "pg": "^8.23.0"
+  }
+}

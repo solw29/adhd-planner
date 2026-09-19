@@ -1,0 +1,63 @@
+# --- 의존성 ---
+node_modules/
+
+# --- Vercel 로컬 연결 정보(vercel link / vercel env pull 결과) ---
+.vercel/
+
+# --- 실제 환경변수 파일 ---
+.env
+.env.*
+.env*.local
+# .env.*가 .env.example까지 가려버리므로(비밀값이 없는 예시 파일이라 커밋해도 안전) 예외로 둔다.
+!.env.example
+
+# --- 로컬 개발 전용 SQLite DB(닉네임 로그인·사용자별 저장) ---
+# 프로덕션은 항상 DATABASE_URL의 Postgres를 쓴다.
+.data/
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.db-journal
+*.db-wal
+*.db-shm
+
+# --- 사용자 데이터·백업·내보내기 ---
+backups/
+backup/
+*.bak
+*.backup
+*.dump
+exports/
+adhd-planner-backup*.json
+
+# --- 로그 ---
+logs/
+*.log
+npm-debug.log*
+
+# --- 임시 파일·테스트 결과 ---
+tmp/
+temp/
+.tmp/
+*.tmp
+coverage/
+test-results/
+playwright-report/
+
+# --- Claude Code 로컬 설정·개인 스킬(실행에 불필요) ---
+.claude/settings.local.json
+.claude/skills/
+
+# --- Python 캐시 ---
+__pycache__/
+*.pyc
+
+# --- OS/에디터 ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
